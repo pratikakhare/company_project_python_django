@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Trainer</h5>
+              <h4>{{ data }}</h4>
+              <a href="{% url 'trainer' %}" class="btn btn-success">Add Trainer</a>
+              <a href="#" class="btn btn-warning">List of Trainers</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total Subject</h5>
+              <h4>25+</h4>
+              <a href="#" class="btn btn-success">Add Subject</a>
+              <a href="#" class="btn btn-warning">List of Subject</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}
+    
