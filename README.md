@@ -15,30 +15,6 @@
 - **Frontend:** HTML, CSS, Bootstrap
 - **Database:** SQLite (default), supports PostgreSQL/MySQL
 
-## Folder Structure
-
-nexanova/
-├── NexaNova/              # Django project settings
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── trainer/               # Django app for core logic
-│   ├── admin.py
-│   ├── apps.py
-│   ├── forms.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── templates/
-│   │   └── trainer/       # HTML Templates
-│   ├── static/            # CSS/JS/Bootstrap assets
-│   ├── urls.py
-│   └── views.py
-├── db.sqlite3
-├── manage.py
-├── requirements.txt
-└── README.md
 
 ## Setup Instructions
 
