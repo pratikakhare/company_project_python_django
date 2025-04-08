@@ -1,3 +1,5 @@
+# Folder structure
+![Screenshot 2025-04-09 004123](https://github.com/user-attachments/assets/57bccd74-f4fd-4dda-b7e4-42f15e4a7c4c)
 
 # NexaNova
 
