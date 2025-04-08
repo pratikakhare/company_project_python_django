@@ -1,0 +1,23 @@
+{% extends 'trainer/base.html' %}
+{% block title %}Subject Details{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Subject Details</h2>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ subject.name }}</h5>
+    <p><strong>Code:</strong> {{ subject.code }}</p>
+    <p><strong>Description:</strong> {{ subject.description }}</p>
+    <p><strong>Assigned Trainers:</strong></p>
+    <ul>
+      {% for trainer in subject.trainers.all %}
+        <li>{{ trainer.name }}</li>
+      {% empty %}
+        <li>No trainers assigned.</li>
+      {% endfor %}
+    </ul>
+    <a href="{% url 'subject-list' %}" class="btn btn-secondary mt-3">Back to List</a>
+  </div>
+</div>
+{% endblock %}

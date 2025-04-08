@@ -1,9 +1,19 @@
 from django.db import models
 
-# Create your models here.
-class Trainer(models.Model):
+class Subject(models.Model):
+    code = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=100)
-    mobile = models.CharField(max_length=10)
-    subject = models.CharField(max_length=50)
-    
+    description = models.TextField(blank=True)
 
+    def __str__(self):
+        return self.name
+
+class Trainer(models.Model):
+    emp_id = models.IntegerField(unique=True)
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=15)
+    subjects = models.ManyToManyField(Subject, related_name='trainers')
+
+    def __str__(self):
+        return self.name

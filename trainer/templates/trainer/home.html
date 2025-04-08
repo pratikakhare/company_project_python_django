@@ -1,0 +1,38 @@
+{% extends 'trainer/base.html' %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row g-4">
+    
+    <!-- Trainer Card -->
+    <div class="col-md-6">
+      <div class="card border-success shadow h-100">
+        <div class="card-body">
+          <h5 class="card-title text-success">Total Trainers</h5>
+          <h2>{{ total_trainers }}</h2>
+          <div class="mt-3">
+            <a href="{% url 'add-trainer' %}" class="btn btn-success me-2">Add Trainer</a>
+            <a href="{% url 'trainer-list' %}" class="btn btn-outline-success">List of Trainers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subject Card -->
+    <div class="col-md-6">
+      <div class="card border-warning shadow h-100">
+        <div class="card-body">
+          <h5 class="card-title text-warning">Total Subjects</h5>
+          <h2>{{ total_subjects }}</h2>
+          <div class="mt-3">
+            <a href="{% url 'add-subject' %}" class="btn btn-warning me-2">Add Subject</a>
+            <a href="{% url 'subject-list' %}" class="btn btn-outline-warning">List of Subjects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

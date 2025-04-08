@@ -1,0 +1,21 @@
+{% extends 'trainer/base.html' %}
+{% block title %}Trainer Details{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Trainer Details</h2>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ trainer.name }}</h5>
+    <p><strong>Employee ID:</strong> {{ trainer.emp_id }}</p>
+    <p><strong>Email:</strong> {{ trainer.email }}</p>
+    <p><strong>Phone:</strong> {{ trainer.phone }}</p>
+    <p><strong>Subjects:</strong>
+      {% for subject in trainer.subjects.all %}
+        <span class="badge bg-info text-dark">{{ subject.name }}</span>
+      {% endfor %}
+    </p>
+    <a href="{% url 'trainer-list' %}" class="btn btn-secondary mt-3">Back to List</a>
+  </div>
+</div>
+{% endblock %}
