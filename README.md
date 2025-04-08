@@ -17,14 +17,28 @@
 
 ## Folder Structure
 
-├── trainer/                # Django app for core logic
-│   ├── templates/trainer   # HTML templates
-│   ├── static/             # CSS/JS/Bootstrap
+nexanova/
+├── NexaNova/              # Django project settings
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── trainer/               # Django app for core logic
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── templates/
+│   │   └── trainer/       # HTML Templates
+│   ├── static/            # CSS/JS/Bootstrap assets
+│   ├── urls.py
 │   └── views.py
-├── NexaNova/               # Django project settings
-│   └── settings.py
 ├── db.sqlite3
 ├── manage.py
+├── requirements.txt
+└── README.md
 
 ## Setup Instructions
 
