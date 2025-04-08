@@ -1,6 +1,3 @@
-# Folder structure
-![Screenshot 2025-04-09 004123](https://github.com/user-attachments/assets/57bccd74-f4fd-4dda-b7e4-42f15e4a7c4c)
-
 # NexaNova
 
 **NexaNova** is a web-based trainer-subject management application built using Django. It allows administrators to add, view, and manage trainers and subjects, with a clean UI and API endpoints for integration.
@@ -17,6 +14,8 @@
 - **Frontend:** HTML, CSS, Bootstrap
 - **Database:** SQLite (default), supports PostgreSQL/MySQL
 
+# Folder structure
+![Screenshot 2025-04-09 004123](https://github.com/user-attachments/assets/57bccd74-f4fd-4dda-b7e4-42f15e4a7c4c)
 
 ## Setup Instructions
 
